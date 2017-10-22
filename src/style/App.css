@@ -1,2 +1,27 @@
 @import url(../../node_modules/bulma/css/bulma.css);
 @import url(../../node_modules/font-awesome/css/font-awesome.css);
+
+span.icon {
+  margin: 10px;
+}
+
+.fa-heart {
+  font-size: 25px; 
+}
+
+.numbers span {
+  cursor: pointer;
+  margin: 0px 10px;
+  padding: 10px 15px;
+  font-size: 1.3em;
+}
+
+.numberSelected {
+  background: #ccc !important;
+  cursor: not-allowed;
+}
+
+.numberUsed {
+  background: #00d1b2 !important;
+  cursor: not-allowed;
+}
