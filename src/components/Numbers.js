@@ -2,6 +2,9 @@ import React from 'react';
 
 const Numbers = (props) => {
   const numberClassName = (number) =>  {
+    if (props.usedNumbers.indexOf(number) >= 0) {
+      return "numberUsed";
+    }
     if (props.selectedNumbers.indexOf(number) >= 0) {
       return "numberSelected";
     }
@@ -10,8 +13,8 @@ const Numbers = (props) => {
   return (
     <div className="numbers container is-6 is-offset-6 box">
       {Numbers.list.map((number, i) =>
-        <span key={i} className={`${numberClassName(number)} tag is-rounded is-danger`}
-              onClick={() => props.selectNumber(number)}>{number}</span>
+        <span key={i} className={`${numberClassName(number)} tag is-rounded`}
+              onClick={() =>  props.selectNumber(number)}>{number}</span>
       )}
     </div>
   );

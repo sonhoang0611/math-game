@@ -16,12 +16,12 @@ span.icon {
   font-size: 1.3em;
 }
 
-.numberSelected {
+.numbers .numberSelected {
   background: #ccc !important;
   cursor: not-allowed;
 }
 
-.numberUsed {
+.numbers .numberUsed {
   background: #00d1b2 !important;
   cursor: not-allowed;
 }
